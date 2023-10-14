@@ -1,151 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
+
+<head>
+        <title>House Rules - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>House Rules - My Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Welcome to MkDocs</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">House Rules</a>
-                            </li>
-                        </ul>
+</head>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
         </button>
     </div>
 
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
             
-            <li class="nav-item" data-level="1"><a href="#house-rules" class="nav-link">House Rules</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
             
-            <li class="nav-item" data-level="1"><a href="#a-pbta-amuse-bouche" class="nav-link">A PbtA amuse-bouche</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#some-ideas-for-pbta-procedures" class="nav-link">Some ideas for PbtA procedures</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#pbta-hexcrawling" class="nav-link">PbtA hexcrawling</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#dungeon-traversal" class="nav-link">Dungeon traversal</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#languages" class="nav-link">Languages</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
             
-            <li class="nav-item" data-level="1"><a href="#osr-house-rules" class="nav-link">OSR house rules</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#roll-under-ability-score-checks" class="nav-link">Roll under ability score checks</a>
-              <ul class="nav flex-column">
-              </ul>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Welcome to MkDocs
+                </a>
             </li>
-            <li class="nav-item" data-level="2"><a href="#encumbrance" class="nav-link">Encumbrance</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#shock" class="nav-link">Shock</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#character-options" class="nav-link">Character Options</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#thief" class="nav-link">Thief</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#wizards" class="nav-link">Wizards</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#death-and-dying" class="nav-link">Death and Dying</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#dicing-with-death" class="nav-link">Dicing with Death</a>
-              <ul class="nav flex-column">
-              </ul>
+            <li class="drac-box">
+                <a href="./"
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    House Rules
+                </a>
             </li>
         </ul>
+        <!-- endblock -->
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+</nav>
+        <!-- endblock -->
 
-<h1 id="house-rules">House Rules</h1>
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href=".."
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="house-rules">House Rules</h1>
+<h1 id="osr-house-rules">OSR house rules</h1>
+<h2 id="roll-under-ability-score-checks">Roll under ability score checks</h2>
+<p>Ain't gonna use 'em, except maybe in case of laziness. </p>
+<h2 id="encumbrance">Encumbrance</h2>
+<p>We're going to use the <em>Worlds without Number</em> Encumbrance system.</p>
+<h1 id="character-options">Character Options</h1>
+<h2 id="thief">Thief</h2>
+<p>There are two options if you want to play a thief/specialist: the simple version or the slightly more complicated version.</p>
+<h3 id="option-1-thieving-for-the-simple">Option 1: Thieving for the simple</h3>
+<p>Thieves don't have to keep track of all of these percentile skills in OSE RAW. You just roll a d6 if you want to do something thiefy and it's plausible, you just roll a d6. If you roll high enough, you succeed; "high enough" can be decided by GM fiat, but a base class skill chance by level might look like this: 
+Level : Class skill chance
+1 : 1 in 6
+2 : 2 in 6
+3 : 2 in 6
+4 : 3 in 6
+5 : 3 in 6
+6 : 4 in 6
+7 : 4 in 6
+8 : 5 in 6
+9 : 5 in 6
+10 : 6 in 6 (roll 2d6; failure only happens if both are 1)</p>
+<h3 id="option-2-the-lotfp-specialist">Option 2: The LotFP Specialist</h3>
+<p>If you're fine with a bit more complexity and/or want to customize, the <em>Lamentations of the Flame Princess Specialist</em> has a nice skill system, including thiefy stuff as well as other things (Architecture, Bushcraft, Languages, Tinker, etc.). Only tweak is that Sneak Attack as written is pretty OP, so points in Sneak Attack will be capped by level: max 2 points at Level 1, 3 points at Level 5, etc. </p>
+<h2 id="wizards">Wizards</h2>
+<p>We're going to use the version of GLoG wizards in Skerples' v2 of the GLoG (https://coinsandscrolls.blogspot.com/2019/10/osr-glog-based-homebrew-v2-many-rats-on.html). Almost everything will be the same as in Skerples' presentation; I have thoughts about where many of the wizard schools will fit in our setting, but let me know if you want to take one of the very weird schools. </p>
+<h1 id="combat-rules">Combat Rules</h1>
+<h2 id="critical-hits">Critical Hits</h2>
+<p>Following the general rule of rolling dice is fun but d20s and d6s feel the most old school, I'm tempted to   </p>
+<h2 id="shock">Shock</h2>
+<p>No one likes a combat where players and monsters are just whiffing for 20 minutes (especially not me). Some classes might be eligible for weapons with Shock (from <em>Worlds without Number</em>), to speed things up. But be warned, monsters might be able to deal Shock damage as well. </p>
+<h1 id="death-and-dying">Death and Dying</h1>
+<p>(from Gavin Norman on some random reddit thread)
+Dying: Upon reaching 0 hit points, your character is unconscious and bleeding out. Roll on the following chart each round, until an ally heals you (either with magic, herbs, or binding wounds) or you die. If you are healed, you come around with 1 hit point (or more, if magic was used) and suffer a -3 penalty to attacks until you get a day's rest.</p>
+<ol>
+<li>You die.</li>
+<li>A random ability score is permanently reduced by 1.</li>
+<li>Maximum hit points permanently reduced by 1.</li>
+<li>If healed, you require 1d6+1 days of rest to recover.</li>
+<li>Even if healed, you remain unconscious for 1d6 hours.</li>
+<li>You come around with 1 hit point.</li>
+</ol>
+<h1 id="dicing-with-death">Dicing with Death</h1>
+<p>If your character dies and the rest of the party is of a higher level than you, you <em>may</em> opt to play the "playing dice with Death" minigame. (cf. Knock 2, p. 19 for rules) For now, the XP multiplier is 150, though we'll probably bump it up to 200 at some point here. </p>
 <h1 id="a-pbta-amuse-bouche">A PbtA amuse-bouche</h1>
 <p>In-game, most of the time we play w/OSE rules and procedures</p>
 <p>But there are also some times and places we use PbtA die rolls to:
@@ -203,121 +249,31 @@
 <ul>
 <li>in immediate area, everyone has some familiarity with imperial common</li>
 <li>may use the language tick system from Spider Queen for more abstruse languages</li>
-</ul>
-<h1 id="osr-house-rules">OSR house rules</h1>
-<h2 id="roll-under-ability-score-checks">Roll under ability score checks</h2>
-<p>Ain't gonna use 'em, except maybe in case of laziness. </p>
-<h2 id="encumbrance">Encumbrance</h2>
-<p>We're going to use the <em>Worlds without Number</em> Encumbrance system.</p>
-<h2 id="shock">Shock</h2>
-<p>No one likes a combat where players and monsters are just whiffing for 20 minutes (especially not me). Some classes might be eligible for weapons with Shock (from <em>Worlds without Number</em>), to speed things up. But be warned, monsters might be able to deal Shock damage as well. </p>
-<h1 id="character-options">Character Options</h1>
-<h2 id="thief">Thief</h2>
-<p>There are two options if you want to play a thief/specialist: the simple version or the slightly more complicated version.</p>
-<h3 id="option-1-thieving-for-the-simple">Option 1: Thieving for the simple</h3>
-<p>Thieves don't have to keep track of all of these percentile skills in OSE RAW. You just roll a d6 if you want to do something thiefy and it's plausible, you just roll a d6. If you roll high enough, you succeed; "high enough" can be decided by GM fiat, but a base class skill chance by level might look like this: 
-Level : Class skill chance
-1 : 1 in 6
-2 : 2 in 6
-3 : 2 in 6
-4 : 3 in 6
-5 : 3 in 6
-6 : 4 in 6
-7 : 4 in 6
-8 : 5 in 6
-9 : 5 in 6
-10 : 6 in 6 (roll 2d6; failure only happens if both are 1)</p>
-<h3 id="option-2-the-lotfp-specialist">Option 2: The LotFP Specialist</h3>
-<p>If you're fine with a bit more complexity and/or want to customize, the <em>Lamentations of the Flame Princess Specialist</em> has a nice skill system, including thiefy stuff as well as other things (Architecture, Bushcraft, Languages, Tinker, etc.). Only tweak is that Sneak Attack as written is pretty OP, so points in Sneak Attack will be capped by level: max 2 points at Level 1, 3 points at Level 5, etc. </p>
-<h2 id="wizards">Wizards</h2>
-<p>We're going to use the version of GLoG wizards in Skerples' v2 of the GLoG (https://coinsandscrolls.blogspot.com/2019/10/osr-glog-based-homebrew-v2-many-rats-on.html). Almost everything will be the same as in Skerples' presentation; I have thoughts about where many of the wizard schools will fit in our setting, but let me know if you want to take one of the very weird schools. </p>
-<h1 id="death-and-dying">Death and Dying</h1>
-<p>(from Gavin Norman on some random reddit thread)
-Dying: Upon reaching 0 hit points, your character is unconscious and bleeding out. Roll on the following chart each round, until an ally heals you (either with magic, herbs, or binding wounds) or you die. If you are healed, you come around with 1 hit point (or more, if magic was used) and suffer a -3 penalty to attacks until you get a day's rest.</p>
-<ol>
-<li>You die.</li>
-<li>A random ability score is permanently reduced by 1.</li>
-<li>Maximum hit points permanently reduced by 1.</li>
-<li>If healed, you require 1d6+1 days of rest to recover.</li>
-<li>Even if healed, you remain unconscious for 1d6 hours.</li>
-<li>You come around with 1 hit point.</li>
-</ol>
-<h1 id="dicing-with-death">Dicing with Death</h1>
-<p>If your character dies and the rest of the party is of a higher level than you, you <em>may</em> opt to play the "playing dice with Death" minigame. (cf. Knock 2, p. 19 for rules) For now, the XP multiplier is 150, though we'll probably bump it up to 200 at some point here. </p></div>
-            </div>
-        </div>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+</footer>
+            <!-- endblock -->
         </div>
-    </div>
-</div>
 
-    </body>
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+			<script src="../search/main.js" defer></script>
+
+</body>
+
 </html>
