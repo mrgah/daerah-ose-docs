@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>My Docs</title>
+        <title>Character Options - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="/assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -64,35 +64,35 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="/."
+                <a href=".."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Welcome to Daerah
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/PbtA_options/"
+                <a href="../PbtA_options/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     A PbtA amuse-bouche
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/XP/"
+                <a href="../XP/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Experience Points
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/character_options/"
-                    class="
+                <a href="./"
+                    class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Character Options
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/house_rules/"
+                <a href="../house_rules/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     House Rules
@@ -123,12 +123,28 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../XP/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../house_rules/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="//search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -151,15 +167,34 @@
             <!-- endblock -->
 
             <!-- block content -->
-    <section class="p-md-5 section-content">
-        <article>
-            <p></p>
-            <h1>404</h1>
-            <hr>
-            <p><strong>Page not found</strong></p>
-        </article>
-    </section>
-
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="character-options">Character Options</h1>
+<h2 id="thief">Thief</h2>
+<p>There are two options if you want to play a thief/specialist: the simple version or the slightly more complicated version.</p>
+<h3 id="option-1-thieving-for-the-simple">Option 1: Thieving for the simple</h3>
+<p>Thieves don't have to keep track of all of these percentile skills that are given in OSE RAW. You just roll a d6 if you want to do something thiefy and it's plausible, you just roll a d6. If you roll high enough, you succeed; "high enough" can be decided by GM fiat, but a base class skill chance by level will look like this: 
+| <strong>Level</strong> | <strong>Class skill chance</strong> |
+|-----------|-----------------------|
+| 1         | 1 in 6                 |
+| 2         | 2 in 6                 |
+| 3         | 2 in 6                 |
+| 4         | 3 in 6                 |
+| 5         | 3 in 6                 |
+| 6         | 4 in 6                 |
+| 7         | 4 in 6                 |
+| 8         | 5 in 6                 |
+| 9         | 5 in 6                 |
+| 10    | 6 in 6[^1]             |
+[^1]: roll 2d6; failure only occurs if both are 1s</p>
+<h3 id="option-2-the-lotfp-specialist">Option 2: The LotFP Specialist</h3>
+<p>If you're fine with a bit more complexity and/or want to customize, the <em>Lamentations of the Flame Princess Specialist</em> has a nice skill system, including thiefy stuff as well as other things (Architecture, Bushcraft, Languages, Tinker, etc.). Only tweak is that Sneak Attack as written is pretty OP, so points in Sneak Attack will be capped by level: max 2 points at Level 1, 3 points at Level 5, etc. </p>
+<h2 id="wizards">Wizards</h2>
+<p>We're going to use the version of GLoG wizards in Skerples' v2 of the GLoG (https://coinsandscrolls.blogspot.com/2019/10/osr-glog-based-homebrew-v2-many-rats-on.html). Almost everything will be the same as in Skerples' presentation; I have thoughts about where many of the wizard schools will fit in our setting, but let me know if you want to take one of the very weird schools. </p>
+<p>If and when a wizard gets to level 5 and beyond, we're going to follow the spell progression in B/X / OSE. I.e., a level 5 wizard will get one spell from the OSE Level 3 spell list. We'll be using the Skerples formulation of those spells where they exist (fireball), or adapting the OSE definition to the GLoG rules where they don't (see the DM for details). Expected values for some spells (fireball) are lower in GLoG than in OSE; the tradeoff is that you might get to retain your magic dice (MD) and cast the same spell multiple times, depending on how your rolls play out. </p>
+<p>PC wizards will acquire spells automatically upon leveling up. It's an episodic open table game, so the assumption is that your PC is studying and advancing their knowledge between sessions. </p></p>
+    </article>
+</section>
             <!-- endblock -->
 
             <!-- block footer -->
@@ -176,11 +211,11 @@
 
     </main>
 
-        <script>var base_url = '/';</script>
-        <script src="/assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="/assets/js/bootstrap.bundle.min.js""></script>
-        <script src="/assets/js/mkdocs.js""></script>
-			<script src="/search/main.js" defer></script>
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+			<script src="../search/main.js" defer></script>
 
 </body>
 
